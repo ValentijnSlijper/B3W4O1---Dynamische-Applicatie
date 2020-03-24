@@ -3,7 +3,6 @@
 
     $query = $conn->prepare("SELECT * FROM characters");
 
-    // $query->bindParam(":id", $subject);
     $query->execute();
 
     $result = $query->fetchAll();
